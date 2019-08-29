@@ -16,10 +16,15 @@ public class Ordered {
 		boolean xgreatery = x > y;
 		boolean ygreaterz = y > z;
 
+		boolean xlessy = x < y;
+		boolean ylessz = y < z;
+
 		boolean isOrdered = xgreatery && ygreaterz;
+		boolean isOrderedless = xlessy && ylessz;
 
+        boolean total = (isOrdered) || (isOrderedless);
 
-		System.out.println(isOrdered);
+System.out.println(total);
 
 
 	}
